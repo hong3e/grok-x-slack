@@ -35,7 +35,7 @@ def load_config():
 
     xai_api_key = os.getenv("XAI_API_KEY")
     slack_webhook_url = os.getenv("SLACK_WEBHOOK_URL")
-    model = os.getenv("XAI_MODEL", "grok-2")
+    model = os.getenv("XAI_MODEL", "grok-2-latest")
     search_prompt = os.getenv(
         "SEARCH_PROMPT",
         "Find the most popular posts about stock investing, KOSPI, KOSDAQ, NASDAQ, NVIDIA, Tesla, and finance from the last 24 hours on X. Focus on posts with high likes, views, or retweets."
